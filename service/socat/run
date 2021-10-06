@@ -1,0 +1,2 @@
+#!/bin/sh
+socat tcp4-LISTEN:9051,reuseaddr,fork,keepalive,bind=127.0.0.1 SOCKS4a:127.0.0.1:${ONION_BACKEND}:80,socksport=9050
